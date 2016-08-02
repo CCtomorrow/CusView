@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="text" format="string"/>
+    <attr name="textColor" format="color"/>
+    <attr name="textSize" format="dimension"/>
+
+    <declare-styleable name="CustomTextViewStyle">
+        <attr name="text"/>
+        <attr name="textColor"/>
+        <attr name="textSize"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomImageView">
+        <attr name="text"/>
+        <attr name="textColor"/>
+        <attr name="textSize"/>
+        <attr name="imgSrc" format="reference"/>
+        <attr name="imageScaleType">
+            <enum name="fillXY" value="0"/>
+            <enum name="center" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SimpleLoading">
+        <attr name="firstColor" format="color"/>
+        <attr name="secondColor" format="color"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="circleWidth" format="dimension"/>
+        <attr name="speed" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="TimeLineView">
+        <attr name="beginLine" format="color|reference"/>
+        <attr name="endLine" format="color|reference"/>
+        <attr name="lineWidth" format="dimension"/>
+        <attr name="timeLineMarker" format="color|reference"/>
+        <attr name="timeLineMarkerSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="WeatherLineView">
+        <!-- 文字大小 -->
+        <attr name="temperTextSize" format="dimension"/>
+        <!-- 文字的颜色 -->
+        <attr name="weatextColor" format="color"/>
+        <!-- 绘制的线的宽度 -->
+        <attr name="weaLineWidth" format="dimension"/>
+        <!-- 绘制的圆点的半径 -->
+        <attr name="weadotRadius" format="dimension"/>
+        <!-- 文字离圆点的距离 -->
+        <attr name="textDotDistance" format="dimension"/>
+    </declare-styleable>
+
+</resources>

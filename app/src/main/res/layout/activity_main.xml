@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/uniqueid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btn_go_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="打开详情页面"/>
+
+        <Button
+            android:id="@+id/btn_go_timeline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="时光轴效果"/>
+
+        <Button
+            android:id="@+id/btn_go_weather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="天气效果图"/>
+
+        <yong.qing.com.qimingview.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            customer:text="2468"
+            customer:textColor="#FF0000"
+            customer:textSize="48sp"/>
+
+        <yong.qing.com.qimingview.view.CustomImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            customer:imageScaleType="center"
+            customer:imgSrc="@drawable/ic_launcher"
+            customer:text="吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼吼"
+            customer:textColor="#FF0000"
+            customer:textSize="18sp"/>
+
+        <yong.qing.com.qimingview.view.SimpleLoading
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            customer:circleWidth="10dp"
+            customer:radius="30dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

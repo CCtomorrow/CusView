@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".zhihudetail.DetailActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <yong.qing.com.qimingview.zhihudetail.CustomScrollerView
+        android:id="@+id/myscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#efefef"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="10dp"
+                    android:text="历史上有哪些打脸的故事？"
+                    android:textColor="#ababab"
+                    android:textSize="18sp"/>
+
+                <include
+                    android:id="@+id/user_detail"
+                    layout="@layout/user_detail_view"
+                    />
+
+                <WebView
+                    android:id="@+id/webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </WebView>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/top_user_detail"
+                layout="@layout/user_detail_view"
+                />
+
+        </FrameLayout>
+    </yong.qing.com.qimingview.zhihudetail.CustomScrollerView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFFFF"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_nohelp"
+            android:gravity="center_horizontal"
+            android:text="没有帮助"
+            android:textColor="#ababab"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_thank"
+            android:gravity="center_horizontal"
+            android:text="感谢"
+            android:textColor="#ababab"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_collect"
+            android:gravity="center_horizontal"
+            android:text="收藏"
+            android:textColor="#ababab"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/ic_comment"
+            android:gravity="center_horizontal"
+            android:text="评论 184"
+            android:textColor="#ababab"/>
+    </LinearLayout>
+
+</RelativeLayout>
